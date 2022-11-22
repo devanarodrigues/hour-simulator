@@ -1,10 +1,15 @@
 
 
- let output = ['']
- let idHorario = document.getElementById('horario')
- let i = 0
+let lugar = document.querySelector("#lugar")
+let output = ['']
+let idHorario = document.getElementsByClassName('horario')
+let i = 0
 
- function logica() {
+function exibir() {
+    lugar.classList.toggle('horario')
+}
+
+function logica() {
     let intervalo = document.getElementById("intervalo").value;
     let horarioInicial = document.getElementById("horario-input").value;
     intervalo = +intervalo
@@ -14,14 +19,15 @@
     function para() {
         paraInterno()
         function paraInterno() {
+            output = ''
             for (cont; horarioInicial <= 23; cont++) {
                 output = [`${cont}° horário às ${horarioInicial}h`]
                 horarioInicial += intervalo;
                 this.i++
 
-                idHorario.innerHTML +=`<p>${output[i]}<p>`
+                console.log(lugar.innerHTML += `<p>${output[i]}<p>`)
                 if (i != i) {
-                    idHorario.innerHTML = output[i]
+                    lugar.innerHTML = output[i]
                 }
             }
         }
