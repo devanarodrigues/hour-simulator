@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="theme-color" content="var(--fundo)" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="var(--fundo)" />
+    <meta name="msapplication-navbutton-color" content="var(--fundo)" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icon/favicon-16x16.png" />
+
+    <!------------------------ FONT AWESOME --------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Hour Simulator</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="topo"><i class="fa-solid fa-question"></i></div>
+        <main id="container">
+            <section id="content">
+                
+                <h2>Hour Simulator</h2>
+                
+                <div id="logo" >
+                    <img src="/assets/img/logo264.png" alt="Logo do simulador">
+                </div>
+                <div id="horario" class="hide"></div>
+
+                <div id="inputs">
+                    <label for="horario-input">Horário</label>
+                    <input id="horario-input" name="horario-input" type="text" placeholder="Digite aqui..." autofocus required>
+
+                    <label for="intervalo">Intervalo</label>
+                    <input id="intervalo" name="intervalo" type="text" placeholder="Digite aqui..." required>
+
+                    <input id="submit" type="submit" onclick="exibir(), logica()"></input>
+
+                </div>
+
+
+
+
+            </section>
+        </main>
+    </div>
+
+    <script src="/assets/script/logica.js"></script>
+    <script src="/assets/script/show-hide.js"></script>
+</body>
+
+</html>
