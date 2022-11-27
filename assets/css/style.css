@@ -113,7 +113,7 @@ button#help-inside:hover {
     color: rgb(192, 192, 192);
     display: none;
     width: 40%;
-    min-height: 50%;
+    height: auto;
     opacity: 1;
     background-color: var(--subfundo);
     border-radius: 10px;
@@ -308,7 +308,7 @@ input::placeholder {
 
     #help-content {
         width: 60%;
-        height: 70%;
+        height: auto;
         margin: 13% 20%;
     }
 
@@ -372,7 +372,7 @@ input::placeholder {
     }
 
     #help-content {
-        min-height: 80%;
+        height: auto;
     }
 
 }
@@ -393,6 +393,7 @@ input::placeholder {
 
     #help-content {
         width: 90%;
+        height: auto;
         margin: 25% 5%;
     }
 
@@ -417,9 +418,11 @@ input::placeholder {
 
     #help-content {
         width: 95%;
+        height: auto;
         margin: 25% 2.5%;
     }
+
     button#help-inside {
-            margin-top: 5%;
-        }
+        margin-top: 5%;
+    }
 }
