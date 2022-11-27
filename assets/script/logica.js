@@ -5,6 +5,10 @@ let output = ['']
 let idHorario = document.getElementsByClassName('horario')
 let i = 0
 let inputs = document.getElementById('inputs')
+let idHorarioInput = document.getElementById('horario-input')
+let idIntervalo = document.getElementById('intervalo')
+
+
 
 function exibir() {
     lugar.classList.toggle('horario')
@@ -46,6 +50,20 @@ function logica() {
             document.getElementById('btn-limpar').style.display = 'block'
     }
     
+}
+let contagem = 0
+
+function abrirHelp(){
+    let helpContent = document.getElementById('help-content')
+    if (contagem % 2 == 0) {
+        helpContent.style.display = 'block'
+        document.getElementById('wrapper').classList.toggle('blur')
+    }else{
+        helpContent.style.display = 'none'
+        document.getElementById('wrapper').classList.toggle('blur')
+    }
+
+    contagem++
 }
 
 

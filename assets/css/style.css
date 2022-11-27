@@ -10,6 +10,7 @@
     margin: 0;
     font-family: "sarala";
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -58,8 +59,67 @@ body {
 #content h2 {
     width: 100%;
     text-align: center;
+    padding-left: 15%;
     color: #fff;
 }
+button#help{
+    color:#000 ;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: .5em;
+    float: right;
+    margin: 1.5% 0;
+    text-decoration: none;
+    background-color: rgb(180, 0, 0);
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button#help:hover{
+    filter: contrast(2);
+}
+button#help-inside{
+    color:#000 ;
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 1.5% 0;
+    text-decoration: none;
+    background-color: rgb(180, 0, 0);
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+}
+button#help-inside:hover{
+    filter: contrast(2);
+}
+
+#help-content{
+    display: none;
+    width: 40%;
+    height: 40%;
+    opacity: 1;
+    background-color: var(--verde);
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 999;
+    position: absolute;
+    margin: 15% 30%;
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 2000px rgba(0, 0, 0, 0.726);
+}
+.blur{
+    filter: blur(20px) ;
+}
+
+
 
 /* #content h2::after {
     content: "";
