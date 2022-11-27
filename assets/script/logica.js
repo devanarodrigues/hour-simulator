@@ -7,7 +7,7 @@ let i = 0
 let inputs = document.getElementById('inputs')
 let idHorarioInput = document.getElementById('horario-input')
 let idIntervalo = document.getElementById('intervalo')
-
+let h2 = document.getElementById('h2')
 
 
 function exibir() {
