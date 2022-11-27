@@ -25,7 +25,7 @@ function logica() {
                 horarioInicial += intervalo;
                 this.i++
 
-                console.log(lugar.innerHTML += `<p>${output[i]}<p>`)
+                console.log(lugar.innerHTML += `<p>${output[i]}<br><p>`)
                 if (i != i) {
                     lugar.innerHTML = output[i]
                 }
