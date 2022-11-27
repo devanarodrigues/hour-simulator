@@ -30,7 +30,7 @@
         <p>&emsp;O Hour Simulator indica os horários corretos para tomar remédio de acordo com o intervalo de horas desejado.</p>
         <h3>Como usar?</h3>
         <p>&emsp;No campo 'Horario inicial' insira o primeiro horário em que se deseja tomar o remédio.
-            <br>&emsp;Já no campo 'Intervalo' insira o tempo de intervalo entre as doses.
+            <br>&emsp;Já no campo 'Intervalo' insira o tempo de intervalo em horas entre as doses.
             <br><br> <b>OBS: Ambos os campos devem ser preenchidos APENAS com números.</b></p>
         <button id="help-inside" onclick="abrirHelp()">Fechar</button>
     </div>
@@ -53,7 +53,7 @@
                     <input id="horario-input" name="horario-input" type="text" placeholder="Digite aqui..." autofocus
                         required>
 
-                    <label for="intervalo">Intervalo em horas</label>
+                    <label for="intervalo">Intervalo</label>
                     <input id="intervalo" name="intervalo" type="text" placeholder="Digite aqui..." required>
 
                     <input id="submit" type="submit" onclick="exibir(), logica()"></input>
