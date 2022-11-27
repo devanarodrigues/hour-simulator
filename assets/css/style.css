@@ -368,11 +368,13 @@ input::placeholder {
     }
 
     button#help-inside {
-        margin-top: 1%;
+        margin-top: 20%;
     }
-    #help-content p:last-child{
-        padding-bottom: 20px;
+
+    #help-content {
+        min-height: 80%;
     }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -395,11 +397,11 @@ input::placeholder {
     }
 
     button#help-inside {
-        margin-top: 5%;
+        margin-top: 25%;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
     #container {
         width: 97%;
         height: 95%;
@@ -415,7 +417,9 @@ input::placeholder {
 
     #help-content {
         width: 95%;
-        min-height: 80%;
         margin: 25% 2.5%;
     }
+    button#help-inside {
+            margin-top: 5%;
+        }
 }
