@@ -4,41 +4,66 @@ let lugar = document.querySelector("#lugar")
 let output = ['']
 let idHorario = document.getElementsByClassName('horario')
 let i = 0
+let inputs = document.getElementById('inputs')
+let idHorarioInput = document.getElementById('horario-input')
+let idIntervalo = document.getElementById('intervalo')
+let h2 = document.getElementById('h2')
+
 
 function exibir() {
     lugar.classList.toggle('horario')
 }
 
+function limpar(){
+    document.getElementById('lugar').innerHTML = ''
+    document.getElementById('lugar').innerText = ''
+    lugar.classList.toggle('horario')
+    document.getElementById('inputs').style.display = 'flex'
+    document.getElementById('btn-limpar').style.display = 'none'
+
+}
+
 function logica() {
+    
     let intervalo = document.getElementById("intervalo").value;
     let horarioInicial = document.getElementById("horario-input").value;
     intervalo = +intervalo
     horarioInicial = +horarioInicial
-    let cont = 1
+    let i = 1
+    var arrayHorarios = ['']
+    var limpar = ''
+    
+    
+
+    para()
 
     function para() {
-        paraInterno()
-        function paraInterno() {
-            output = ''
-            for (cont; horarioInicial <= 23; cont++) {
-                output = [`${cont}° horário às ${horarioInicial}h`]
+            
+            for (i; horarioInicial <= 23; i++) {
+                arrayHorarios.push(horarioInicial)
+                lugar.innerText += `${i}° horário às ${parseInt(arrayHorarios[i])}h`
+                lugar.innerHTML += "<br><br>"
                 horarioInicial += intervalo;
-                this.i++
-
-                console.log(lugar.innerHTML += `<p>${output[i]}<br><p>`)
-                if (i != i) {
-                    lugar.innerHTML = output[i]
-                }
             }
-        }
 
-        while (horarioInicial <= 23) {
-            paraInterno()
-        }
+            document.getElementById('inputs').style.display = 'none'
+            document.getElementById('btn-limpar').style.display = 'block'
+    }
+    
+}
+let contagem = 0
+
+function abrirHelp(){
+    let helpContent = document.getElementById('help-content')
+    if (contagem % 2 == 0) {
+        helpContent.style.display = 'block'
+        document.getElementById('wrapper').classList.toggle('blur')
+    }else{
+        helpContent.style.display = 'none'
+        document.getElementById('wrapper').classList.toggle('blur')
     }
 
-    return para()
-
+    contagem++
 }
 
 
