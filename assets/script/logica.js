@@ -20,6 +20,8 @@ function limpar(){
     lugar.classList.toggle('horario')
     document.getElementById('inputs').style.display = 'flex'
     document.getElementById('btn-limpar').style.display = 'none'
+    idHorarioInput.value = ''
+    idIntervalo.value = ''
 
 }
 
