@@ -41,7 +41,7 @@ function logica() {
             
             for (i; horarioInicial <= 23; i++) {
                 arrayHorarios.push(horarioInicial)
-                lugar.innerText += `${i}° horário às ${parseInt(arrayHorarios[i])}h`
+                lugar.innerText += `${i}° Horário às ${parseInt(arrayHorarios[i])}h`
                 lugar.innerHTML += "<br><br>"
                 horarioInicial += intervalo;
             }
