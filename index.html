@@ -26,30 +26,35 @@
 
 <body>
     <div id="help-content">
+        <h3>Para que serve?</h3>
+        <p>&emsp;O Hour Simulator indica os horários corretos para tomar remédio de acordo com o intervalo de horas desejado.</p>
+        <br>
         <h3>Como usar?</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, impedit.</p>
+        <p>&emsp;No campo 'Horario inicial', insira o primeiro horário em que se deseja tomar o remédio.<br>&emsp;Já no campo 'Intervalo' insira o tempo de intervalo entre uma dose e outra.<br><br> <b>OBS: Ambos os campos devem ser preenchidos apenas com números.</b></p>
         <button id="help-inside" onclick="abrirHelp()">Fechar</button>
     </div>
     <div id="wrapper" class="">
         <main id="container">
             <section id="content">
 
-                
-                
-                <h2 id="h2">Hour Simulator  <button id="help" onclick="abrirHelp()">Como funciona <i class="fa-solid fa-question"></i></button></h2>
-                
-                <div id="logo" >
+
+
+                <h2 id="h2">Hour Simulator <button id="help" onclick="abrirHelp()">Como funciona <i
+                            class="fa-solid fa-question"></i></button></h2>
+
+                <div id="logo">
                     <img src="/assets/img/logo264.png" alt="Icone relógio - Logo do simulador">
                 </div>
                 <div id="lugar"></div>
-                
+
                 <div id="inputs">
-                    <label for="horario-input">Horário</label>
-                    <input id="horario-input" name="horario-input" type="text" placeholder="Digite aqui..." autofocus required>
-                    
-                    <label for="intervalo">Intervalo</label>
+                    <label for="horario-input">Horário inicial</label>
+                    <input id="horario-input" name="horario-input" type="text" placeholder="Digite aqui..." autofocus
+                        required>
+
+                    <label for="intervalo">Intervalo em horas</label>
                     <input id="intervalo" name="intervalo" type="text" placeholder="Digite aqui..." required>
-                    
+
                     <input id="submit" type="submit" onclick="exibir(), logica()"></input>
                 </div>
                 <button id="btn-limpar" onclick="limpar()">Limpar resultados</button>

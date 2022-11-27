@@ -96,7 +96,7 @@ button#help-inside {
     outline: none;
     cursor: pointer;
     margin: 0 auto;
-    margin-top: 35%;
+    margin-top: 15%;
     padding: 5px 10%;
     display: flex;
     flex-direction: column;
@@ -113,14 +113,14 @@ button#help-inside:hover {
     color: rgb(192, 192, 192);
     display: none;
     width: 40%;
-    height: 50%;
+    min-height: 50%;
     opacity: 1;
     background-color: var(--subfundo);
     border-radius: 10px;
     padding: 10px;
     z-index: 999;
     position: absolute;
-    margin: 12.5% 30%;
+    margin: 7% 30%;
     transition: 0.5s;
     box-shadow: 0px 0px 20px 2000px rgba(0, 0, 0, 0.726);
     position: absolute relative;
@@ -313,13 +313,13 @@ input::placeholder {
     }
 
     button#help-inside {
-        margin-top: 55%;
+        margin-top: 15%;
     }
 }
 
 @media screen and (max-width: 768px) {
     button#help-inside {
-        margin-top: 65%;
+        margin-top: 10%;
     }
 }
 
@@ -333,7 +333,7 @@ input::placeholder {
     }
 
     button#help-inside {
-        margin-top: 75%;
+        margin-top: 5%;
     }
 
     #help-content {
@@ -352,10 +352,6 @@ input::placeholder {
         height: 90%;
     }
 
-    button#help-inside {
-        margin-top: 80%;
-    }
-
     #help-content {
         width: 80%;
         margin: 25% 10%;
@@ -372,7 +368,10 @@ input::placeholder {
     }
 
     button#help-inside {
-        margin-top: 90%;
+        margin-top: 1%;
+    }
+    #help-content p:last-child{
+        padding-bottom: 20px;
     }
 }
 
@@ -396,7 +395,7 @@ input::placeholder {
     }
 
     button#help-inside {
-        margin-top: 90%;
+        margin-top: 5%;
     }
 }
 
@@ -406,15 +405,17 @@ input::placeholder {
         height: 95%;
     }
 
-    #inputs{
+    #inputs {
         width: 100%;
     }
+
     .horario {
         min-width: 95%;
     }
 
     #help-content {
         width: 95%;
+        min-height: 80%;
         margin: 25% 2.5%;
     }
 }
