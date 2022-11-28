@@ -21,6 +21,7 @@ function limpar(){
     document.getElementById('inputs').style.display = 'flex'
     document.getElementById('btn-limpar').style.display = 'none'
     idHorarioInput.value = ''
+    idHorarioInput.focus()
     idIntervalo.value = ''
 
 }
