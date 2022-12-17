@@ -24,14 +24,16 @@ function exibir() {
 
 // ------- REMOÇÃO OUTPUT HORÁRIOS, LIMPAR E EXIBIR INPUTS --------
 function limpar(){
-    document.getElementById('lugar').innerHTML = ''
-    document.getElementById('lugar').innerText = ''
-    lugar.classList.toggle('horario')
-    document.getElementById('inputs').style.display = 'flex'
-    document.getElementById('btn-limpar').style.display = 'none'
-    idHorarioInput.value = ''
-    idHorarioInput.focus()
-    idIntervalo.value = ''
+    window.history.go(0)
+    
+//     document.getElementById('lugar').innerHTML = ''
+//     document.getElementById('lugar').innerText = ''
+//     lugar.classList.toggle('horario')
+//     document.getElementById('inputs').style.display = 'flex'
+//     document.getElementById('btn-limpar').style.display = 'none'
+//     idHorarioInput.value = ''
+//     idHorarioInput.focus()
+//     idIntervalo.value = ''
     
 }
 
